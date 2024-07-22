@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    이미지를 삽입하기 위해 <img> 태그를 사용한다.
+    이미지 파일의 경로를 src라는 속성의 속성값으로 지정해주어야 하며
+    <img> 태그는 닫기 태그를 사용하지 않는다.
+    -->
+    <h1> 이미지 관련 태그 </h1>
+    <img src="sample/image/cat.jpg" width="200" height="150">
+    <!-- 외부 경로를 지정해서 이미지 파일을 가져올 수 있다. -->
+    <img src="https://i.namu.wiki/i/ds4ZSTgQhBQLABQfR1ECjk2QKOZ2UJTIN9XQTgd3HhJ7cIbKTOvZpw53F6KnLCK3EVBWAV83XLPtx4-eyV2QaQ.webp"> <br>
+    <p> src 속성에 경로를 설정하여 이미지 파일을 불러온다. </p>
+    <hr>
+    <h2>자주 사용하는 속성들</h2>
+    <h3>alt 속성</h3>
+    <p> 사진의 경로가 잘못되거나, 이미지를 제대로 표현 할 수 없을 경우
+        대체 텍스트 용도로 사용된다.
+    </p>
+    <img src="sample/image/dog.jpg" alt="강아지 사진">
+
+    <br>
+    <h3>width, height 속성</h3>
+    <pre>
+        사진의 높이와 너비를 지정 할 수 있다.
+        고정된 단위의 크기로도 지정 가능하면
+        가변크기 단위의 크기로도 지정이 가능하다.
+    </pre>
+
+    <!-- px단위 생략이 가능하지만 지향하지 않는다. -->
+    <h4> 고정 크기 단위 : 화면 사이즈가 줄어도 크기가 변하지 않는다.</h4>
+    <img src="sample/image/bear.png" width="200px" height="250px">
+    <img src="sample/image/tiger.png" width="100" height="150">
+
+    <h4> 가변 크기 단위 : 화면 사이즈 혹은 기준에 따라 크기가 변경된다.</h4>
+    <img src="sample/image/bear.png" width="15%" height="250px">
+    <img src="sample/image/tiger.png" width="30%" height="150">
+
+    <hr>
+    <h2> 정렬 float</h2>
+    <div>
+        <!-- 오른쪽 정렬 -->
+        <img src="sample/image/bear.png" 
+        width="150px" height="250px"
+        style="float: right;"
+        >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Adipisci odit accusantium possimus voluptates saepe minima vitae provident, 
+            praesentium dolorem unde voluptatem id molestiae iure quod, 
+            delectus eligendi enim voluptate perspiciatis!</p>
+    </div>
+    <div>
+        <!-- 왼쪽 정렬 -->
+        <img src="sample/image/bear.png" 
+        width="150px" height="250px"
+        style="float: left;"
+        >
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Adipisci odit accusantium possimus voluptates saepe minima vitae provident, 
+            praesentium dolorem unde voluptatem id molestiae iure quod, 
+            delectus eligendi enim voluptate perspiciatis!</p>
+    </div>
+    </hr>
+</body>
+</html>
